@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../src/input.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+</head>
+
+<body>
+  <!------------Intro section-------------->
+  <section class="section-1">
+    <!------------animated sig-------------->
+
+    <div id="sig">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_iqpygjdz/GN Logo Animation White.json"
+        background="transparent" speed="1" style="width: 65%; height: 65%" autoplay></lottie-player>
+    </div>
+    <!------------/animated sig-------------->
+
+<!------------hero text-------------->
+<h1 class="hero">Hi, I'm George.
+  I'm a front end Developer.</h1>
+<!------------/hero text-------------->
+
+<!------------the blob-------------->
+
+    <div class="blob">
+      <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      <g transform="translate(475.6824543725359 299.7970848266441)">
+        <path id="blob1"
+          d="M215.1 -197.8C271.1 -159.1 303.5 -79.5 293.4 -10.2C283.2 59.2 230.3 118.3 174.3 146.4C118.3 174.6 59.2 171.7 -0.4 172C-59.9 172.4 -119.7 176 -175.1 147.9C-230.4 119.7 -281.2 59.9 -286.2 -4.9C-291.1 -69.8 -250.2 -139.5 -194.9 -178.2C-139.5 -216.9 -69.8 -224.4 4.9 -229.3C79.5 -234.2 159.1 -236.4 215.1 -197.8"
+          fill="#FFFFFF"></path>
+      </g>
+      <g transform="translate(463.4889566201129 253.47463540811873)" style="visibility: hidden;">
+        <path id="blob2"
+          d="M127.4 -123.9C175.2 -79.6 231.1 -39.8 240.3 9.2C249.6 58.2 212.1 116.4 164.3 171.1C116.4 225.8 58.2 276.9 -3.1 279.9C-64.3 283 -128.7 238 -160 183.4C-191.4 128.7 -189.7 64.3 -197.3 -7.6C-204.9 -79.5 -221.8 -159.1 -190.4 -203.4C-159.1 -247.8 -79.5 -256.9 -19.9 -237C39.8 -217.1 79.6 -168.2 127.4 -123.9"
+          fill="#FFFFFF"></path>
+      </g>
+    </svg>
+    </div>
+    <script>
+      const tween = KUTE.fromTo(
+        "#blob1",
+        { path: "#blob1" },
+        { path: "#blob2" },
+        { repeat: 999, duration: 3000, yoyo: true }
+      );
+      tween.start();
+    </script>
+    <!------------/the blob-------------->
+  </section>
+ 
+ 
+<!------------About me section-------------->
+  <section class="white section-2">
+    <h2>About me</h2>
+    
+ 
+  </section>
+   <div class="spacer layer1 flip"></div>
+
+  <!------------Projects section-------------->
+  <section class="section-3">
+    <h2>Projects</h2>
+ 
+  </section>
+  <div class="spacer layer2"></div>
+
+  <!------------contact section-------------->
+  <section class=" white section-4">
+    <h2>Get in touch.</h2>
+    <p>Please feel free to drop me a message.</p>
+    <button class="contact-button" onclick="window.location.href='mailto:ga.nicholson@outlook.com'">Contact</button>
+  </section>
+
+  <!------------footer section-------------->
+  <footer id="foot">
+    <h3>Find me on:</h3>
+  </footer>
+
+</body>
+</html>
+
+
+
+<!-- 
+  animated blob
+
+
+    <div class="blob-motion">
+      <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <g transform="translate(475.6824543725359 299.7970848266441)">
+          <path id="blob3"
+            d="M215.1 -197.8C271.1 -159.1 303.5 -79.5 293.4 -10.2C283.2 59.2 230.3 118.3 174.3 146.4C118.3 174.6 59.2 171.7 -0.4 172C-59.9 172.4 -119.7 176 -175.1 147.9C-230.4 119.7 -281.2 59.9 -286.2 -4.9C-291.1 -69.8 -250.2 -139.5 -194.9 -178.2C-139.5 -216.9 -69.8 -224.4 4.9 -229.3C79.5 -234.2 159.1 -236.4 215.1 -197.8"
+            fill="#FFF"></path>
+        </g>
+        <g transform="translate(463.4889566201129 253.47463540811873)" style="visibility: hidden;">
+          <path id="blob4"
+            d="M127.4 -123.9C175.2 -79.6 231.1 -39.8 240.3 9.2C249.6 58.2 212.1 116.4 164.3 171.1C116.4 225.8 58.2 276.9 -3.1 279.9C-64.3 283 -128.7 238 -160 183.4C-191.4 128.7 -189.7 64.3 -197.3 -7.6C-204.9 -79.5 -221.8 -159.1 -190.4 -203.4C-159.1 -247.8 -79.5 -256.9 -19.9 -237C39.8 -217.1 79.6 -168.2 127.4 -123.9"
+            fill="#FFF"></path>
+        </g>
+      </svg>
+    </div>
+    <script>
+      const tween2 = KUTE.fromTo(
+        "#blob3",
+        { path: "#blob3" },
+        { path: "#blob4" },
+        { repeat: 999, duration: 3000, yoyo: true }
+      );
+      tween2.start();
+    </script>
+    -->
